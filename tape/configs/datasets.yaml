@@ -1,0 +1,94 @@
+H36M-TRAIN:
+    TYPE: ImageDataset
+    DATASET_FILE: data/datasets/h36m_train_25_nomosh.npz #h36m_train_fullmosh.npz #h36m_train_25_nomosh.npz #h36m_train_fullmosh.npz # #h36m_mosh_pav_train_25.npz #data/datasets/_h36m_train.npz
+    IMG_DIR: /media/nikos/Samsung1TB/h36m/train
+    MEAN_STATS:  ~/TAPE/data/datasets/h36m_train_mean_stats.npz
+    KEYPOINT_LIST: [25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 39, 41, 42, 43]
+MPII-TRAIN:
+    TYPE: ImageDataset
+    DATASET_FILE: data/datasets/mpii_train_spin.npz
+    IMG_DIR: /media/nikos/Samsung1TB/mpii/images
+    #IMG_DIR: /media/nikos/data/mpi_human/images
+COCO-TRAIN-2014:
+    TYPE: ImageDataset
+    DATASET_FILE: data/datasets/coco_2014_train_spin.npz
+    IMG_DIR: /media/nikos/Samsung1TB/coco
+    #IMG_DIR: /media/nikos/data/coco
+MPI-INF-TRAIN:
+    TYPE: ImageDataset
+    DATASET_FILE: data/datasets/mpi_inf_3dhp_train.npz #mpi_inf_3dhp_mview.npz #
+    IMG_DIR: /media/nikos/Samsung1TB/mpi-3dhp/mpi_inf_3dhp
+    KEYPOINT_LIST: [25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 41, 42] 
+MPI-INF-VAL:
+    TYPE: ImageDataset
+    DATASET_FILE: data/datasets/mpi_inf_3dhp_valid.npz
+    IMG_DIR: /media/nikos/Samsung1TB/mpi-3dhp/mpi_inf_3dhp
+H36M-VAL-P2:
+    TYPE: ImageDataset
+    DATASET_FILE: data/datasets/h36m_val-p2_25_nomosh.npz
+    IMG_DIR: /media/nikos/Samsung1TB/h36m/val
+    KEYPOINT_LIST: [25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 43]
+    USE_HIPS: True
+H36M-VAL:
+    TYPE: ImageDataset
+    DATASET_FILE: data/datasets/h36m_val_25_nomosh.npz
+    IMG_DIR: /media/nikos/Samsung1TB/h36m/val
+    KEYPOINT_LIST: [25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 39, 41, 42, 43]
+    USE_HIPS: True
+H36M-VAL-P2-OPENPOSE:
+    TYPE: ImageDataset
+    DATASET_FILE: data/datasets/h36m_val_p2_openpose.npz
+    IMG_DIR: data/datasets/h36m/val_val-p2
+    KEYPOINT_LIST: [25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 43]
+    USE_HIPS: False
+3DPW-TEST:
+    TYPE: ImageDataset
+    DATASET_FILE: data/datasets/3dpw_test.npz
+    IMG_DIR: /media/nikos/Samsung1TB/3dpw
+    KEYPOINT_LIST: [25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 43]
+    USE_HIPS: False
+3DPW-TRAIN:
+    TYPE: ImageDataset
+    DATASET_FILE: data/datasets/3dpw_train.npz
+    IMG_DIR: /media/nikos/Samsung1TB/3dpw
+    KEYPOINT_LIST: [25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 43]
+    USE_HIPS: False
+EGO:
+    TYPE: ImageDataset
+    DATASET_FILE: data/datasets/keypoints.npz
+    IMG_DIR: /media/nikos/Samsung1TB/
+    KEYPOINT_LIST: [25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 43]
+    USE_HIPS: False
+3DPW-VAL:
+    TYPE: ImageDataset
+    DATASET_FILE: data/datasets/3dpw_val.npz
+    IMG_DIR: /media/nikos/Samsung1TB/3dpw
+    KEYPOINT_LIST: [25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 43]
+    USE_HIPS: False
+MPI-INF_TEST:
+    TYPE: ImageDataset       
+    DATASET_FILE: data/datasets/mpi_inf_3dhp_test.npz #  mpi_inf_3dhp_fulltest_feats.npz #                                                                                                                        
+    IMG_DIR: /media/nikos/Samsung1TB/mpi-3dhp/mpi_inf_3dhp/mpi_inf_3dhp_test_set
+    USE_HIPS: False
+    KEYPOINT_LIST: [25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 41, 42] 
+POSE:
+    TYPE: ImageDataset       
+    DATASET_FILE: data/datasets/posetrack_train_db.pt                                                                                                                               
+    IMG_DIR: /media/nikos/Samsung1TB/mpi-3dhp/mpi_inf_3dhp/mpi_inf_3dhp_test_set
+    KEYPOINT_LIST: [25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 41, 42]  
+COCO-VAL:
+    TYPE: ImageDataset
+    DATASET_FILE: data/datasets/coco_val.npz
+    IMG_DIR: /media/nikos/Samsung1TB/coco
+    #IMG_DIR: /media/nikos/data/coco
+H36M-MULTIVIEW:
+    TYPE: BatchedImageDataset
+    DATASET_FILE: data/datasets/h36m_multiview.pkl
+    IMG_DIR: /media/nikos/Samsung1TB/h36m/val
+    KEYPOINT_LIST: [25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 43]
+MANNEQUIN:
+    TYPE: BatchedImageDataset
+    DATASET_FILE: data/datasets/mannequin.pkl
+    IMG_DIR: data/datasets/MannequinChallenge
+CMU-MOCAP:
+    DATASET_FILE: data/datasets/cmu_mocap.npz
